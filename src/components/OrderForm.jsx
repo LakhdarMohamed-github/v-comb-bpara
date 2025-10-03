@@ -55,7 +55,8 @@ const OrderForm = () => {
     }
   };
 
-   const benefits = [
+  const benefits = [
+    { icon: <Truck className="w-5 h-5" />, text: "التوصيل مجاني" },
     { icon: <CreditCard className="w-5 h-5" />, text: "الدفع عند الاستلام" },
     { icon: <Package className="w-5 h-5" />, text: "ضمان الجودة" },
     { icon: <Clock className="w-5 h-5" />, text: "خدمة 24/7" }
@@ -152,8 +153,8 @@ const OrderForm = () => {
             )}
           </div>
 
-          {/* Benefits (now only 3) */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+          {/* Benefits */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                 <div className="flex justify-center mb-2">
