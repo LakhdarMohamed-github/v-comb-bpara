@@ -34,7 +34,7 @@ const OrderForm = () => {
         phone: formData.phone,
         city: formData.city,
         product: 'جهاز V-Comb لمكافحة القمل',
-        price: '149 درهم',
+        price: '179 درهم',
         message: `طلب جديد من ${formData.fullName} - الهاتف: ${formData.phone} - المدينة: ${formData.city}`
       };
 
@@ -55,8 +55,7 @@ const OrderForm = () => {
     }
   };
 
-  const benefits = [
-    { icon: <Truck className="w-5 h-5" />, text: "التوصيل مجاني" },
+   const benefits = [
     { icon: <CreditCard className="w-5 h-5" />, text: "الدفع عند الاستلام" },
     { icon: <Package className="w-5 h-5" />, text: "ضمان الجودة" },
     { icon: <Clock className="w-5 h-5" />, text: "خدمة 24/7" }
@@ -75,7 +74,7 @@ const OrderForm = () => {
               سارع بملء الاستمارة وأرسل طلبك
             </h2>
             <div className="flex items-center justify-center space-x-4 space-x-reverse">
-              <span className="text-4xl font-bold text-yellow-300">149 د.م</span>
+              <span className="text-4xl font-bold text-yellow-300">179 د.م</span>
               <span className="text-2xl line-through text-red-300">299 د.م</span>
             </div>
           </div>
@@ -153,8 +152,8 @@ const OrderForm = () => {
             )}
           </div>
 
-          {/* Benefits */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+          {/* Benefits (now only 3) */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
             {benefits.map((benefit, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
                 <div className="flex justify-center mb-2">
