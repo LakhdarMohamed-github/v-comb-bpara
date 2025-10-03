@@ -5,7 +5,7 @@ const Header = () => {
     <header className="bg-green-500 text-white py-2 text-center">
       <div className="container mx-auto px-4">
         <p className="text-sm font-medium">
-          🚚 الدفع عند الاستلام
+          🚚 الدفع عند الاستلام + التوصيل مجاني
         </p>
       </div>
     </header>

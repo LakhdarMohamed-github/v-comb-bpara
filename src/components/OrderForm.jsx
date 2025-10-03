@@ -117,7 +117,7 @@ const OrderForm = () => {
                 <Input
                   type="text"
                   name="city"
-                  placeholder="المدينة"
+                  placeholder="العنوان"
                   value={formData.city}
                   onChange={handleInputChange}
                   required
